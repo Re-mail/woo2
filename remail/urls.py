@@ -23,7 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
     path('', RedirectView.as_view(url="home/", permanent=True)),
-    path('home/', include('user.urls')),
     path('home/', include('login.urls')),
     path('home/', include('signup.urls')),
 ]
